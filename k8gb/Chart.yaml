@@ -1,0 +1,9 @@
+apiVersion: v2
+name: k8gb
+description: Umbrella chart to install k8gb
+type: application
+version: 0.1.0
+dependencies:
+  - name: k8gb
+    version: 0.15.0
+    repository: https://www.k8gb.io
