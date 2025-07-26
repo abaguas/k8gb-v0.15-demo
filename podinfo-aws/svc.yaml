@@ -6,7 +6,6 @@ metadata:
     app.kubernetes.io/name: podinfo
     app.kubernetes.io/version: 6.9.1
   name: podinfo
-  namespace: podinfo
 spec:
   ports:
   - name: http
