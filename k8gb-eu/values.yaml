@@ -8,7 +8,6 @@ k8gb:
     dnsZone: cloud.k8gb.io
     edgeDNSZone: k8gb.io
     edgeDNSServers:
-    - ns-1443.awsdns-52.org
     - 8.8.8.8
     clusterGeoTag: eu
     extGslbClustersGeoTags: us
