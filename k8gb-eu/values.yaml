@@ -1,6 +1,7 @@
 k8gb:
   coredns:
     serviceType: LoadBalancer
-    customAnnotations:
-      service.beta.kubernetes.io/aws-load-balancer-type: nlb
+    deployment:
+      annotations:
+        service.beta.kubernetes.io/aws-load-balancer-type: nlb
 
