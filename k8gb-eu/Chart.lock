@@ -1,6 +1,6 @@
 dependencies:
 - name: k8gb
   repository: https://www.k8gb.io
-  version: v0.15.0
-digest: sha256:1f4288442ca053e366cc3f0fc436ab440e7fb75919cfd3a603821027adedfbe7
-generated: "2025-07-25T17:24:04.105469+02:00"
+  version: v0.14.0
+digest: sha256:e0cb713d3216205b27a2bc1f10937bfb26145bcb5a6e1934de52548964770d74
+generated: "2025-07-26T21:54:48.608038+02:00"
