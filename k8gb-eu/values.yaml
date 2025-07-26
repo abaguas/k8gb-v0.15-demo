@@ -9,9 +9,7 @@ k8gb:
     edgeDNSZone: k8gb.io
     edgeDNSServers:
     - ns-1443.awsdns-52.org
-    - ns-36.awsdns-04.com
-    - ns-953.awsdns-55.net
-    - ns-1879.awsdns-42.co.uk
+    - 8.8.8.8
     clusterGeoTag: eu
     extGslbClustersGeoTags: us
   route53:
