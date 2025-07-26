@@ -1,0 +1,18 @@
+---
+apiVersion: networking.istio.io/v1
+kind: VirtualService
+metadata:
+  name: podinfo
+  labels:
+    app: podinfo
+spec:
+  gateways:
+    - istio-ingress/podinfo
+  hosts:
+    - podinfo.cloud.k8gb.io
+  http:
+    - route:
+        - destination:
+            host: podinfo
+            port:
+              number: 9898
