@@ -8,7 +8,7 @@ k8gb:
     dnsZone: cloud.k8gb.io
     edgeDNSZone: k8gb.io
     edgeDNSServers:
-    - 8.8.8.8
+    - 169.254.169.253
     clusterGeoTag: eu
     extGslbClustersGeoTags: us
   route53:
