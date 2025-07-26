@@ -6,7 +6,7 @@ metadata:
   namespace: istio-ingress
 spec:
   selector:
-    app: istio-ingressgateway
+    app: istio-ingress
   servers:
     - hosts:
         - podinfo.cloud.k8gb.io
