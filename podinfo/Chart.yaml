@@ -1,9 +1,0 @@
-apiVersion: v2
-name: podinfo
-description: Umbrella chart to install podinfo
-version: 0.1.0
-type: application
-dependencies:
-  - name: podinfo
-    version: ">=6.0.0"
-    repository: https://stefanprodan.github.io/podinfo 
