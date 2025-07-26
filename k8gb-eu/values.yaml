@@ -14,6 +14,11 @@ k8gb:
     - ns-1879.awsdns-42.co.uk
     clusterGeoTag: eu
     extGslbClustersGeoTags: us
+  route53:
+    enabled: true
+    hostedZoneID: Z0558249124TGIA4RDL27
+    irsaRole: arn:aws:iam::600627351764:role/external-dns-irsa-role
+
 
   
 

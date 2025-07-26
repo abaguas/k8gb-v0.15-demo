@@ -44,4 +44,8 @@ kubectl create ns podinfo
 
 kubectl label ns podinfo istio-injection=enabled
 
-argocd app create podinfo --repo https://github.com/abaguas/k8gb-v0.15-demo --path podinfo --dest-server https://kubernetes.default.svc --dest-namespace podinfo
+kaf argocd-app
+
+## Configure AWS route 53 role and trust
+
+https://kubernetes-sigs.github.io/external-dns/v0.14.0/tutorials/aws/#use-eksctl-with-eksctl-created-eks-cluster
