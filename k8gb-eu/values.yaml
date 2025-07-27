@@ -8,7 +8,10 @@ k8gb:
     dnsZones:
       - loadBalancedZone: cloud.k8gb.website
         parentZone: k8gb.website
-        dnsZoneNegTTL: 300
+        dnsZoneNegTTL: 30
+      - loadBalancedZone: aws.k8gb.website
+        parentZone: k8gb.website
+        dnsZoneNegTTL: 30
     edgeDNSServers:
     - 169.254.169.253
     clusterGeoTag: eu
@@ -25,4 +28,5 @@ k8gb:
     txtPrefix: k8gb-eu
     txtOwnerId: k8gb-Z0558249124TGIA4RDL27-eu
     domainFilters:
+      - k8gb.website
       - k8gb.website
