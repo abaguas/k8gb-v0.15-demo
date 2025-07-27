@@ -12,5 +12,5 @@ spec:
         - podinfo.cloud.k8gb.website
       port:
         name: http
-        number: 8080
+        number: 80
         protocol: http
