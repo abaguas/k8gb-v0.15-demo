@@ -9,7 +9,7 @@ spec:
   gateways:
     - istio-ingress/podinfo-aws
   hosts:
-    - podinfo.aws.k8gb.io
+    - podinfo.aws.k8gb.website
   http:
     - route:
         - destination:

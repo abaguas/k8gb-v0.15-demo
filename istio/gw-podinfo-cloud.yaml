@@ -9,7 +9,7 @@ spec:
     app: istio-ingress
   servers:
     - hosts:
-        - podinfo.cloud.k8gb.io
+        - podinfo.cloud.k8gb.website
       port:
         name: http
         number: 8080

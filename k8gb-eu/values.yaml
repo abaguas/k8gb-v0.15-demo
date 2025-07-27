@@ -5,8 +5,8 @@ k8gb:
       annotations:
         service.beta.kubernetes.io/aws-load-balancer-type: nlb
   k8gb:
-    dnsZone: cloud.k8gb.io
-    edgeDNSZone: k8gb.io
+    dnsZone: cloud.k8gb.website
+    edgeDNSZone: k8gb.website
     edgeDNSServers:
     - 169.254.169.253
     clusterGeoTag: eu
