@@ -3,6 +3,8 @@ apiVersion: k8gb.absa.oss/v1beta1
 kind: Gslb
 metadata:
   name: podinfo
+  annotations:
+    k8gb.io/exposed-ip-addresses: "185.199.110.153"
 spec:
   resourceRef:
     apiVersion: networking.istio.io/v1
