@@ -1,32 +1,21 @@
 k8gb:
   coredns:
+    replicaCount: 2
     serviceType: LoadBalancer
     deployment:
       annotations:
         service.beta.kubernetes.io/aws-load-balancer-type: nlb
+
   k8gb:
-    dnsZones:
-      - loadBalancedZone: cloud.k8gb.website
-        parentZone: k8gb.website
-        dnsZoneNegTTL: 30
-      - loadBalancedZone: aws.k8gb.website
-        parentZone: k8gb.website
-        dnsZoneNegTTL: 30
+    dnsZone: cloud.k8gb.website
+    edgeDNSZone: k8gb.website
+    dnsZoneNegTTL: 30
     edgeDNSServers:
     - 169.254.169.253
     clusterGeoTag: eu
     extGslbClustersGeoTags: us
 
-  extdns:
+  route53:
     enabled: true
-    provider:
-      name: aws
-    serviceAccount:
-      name: k8gb-external-dns
-      annotations:
-        eks.amazonaws.com/role-arn: arn:aws:iam::600627351764:role/external-dns-irsa-role
-    txtPrefix: k8gb-eu
-    txtOwnerId: k8gb-Z0558249124TGIA4RDL27-eu
-    domainFilters:
-      - k8gb.website
-      - k8gb.website
+    hostedZoneID: Z0558249124TGIA4RDL27
+    irsaRole: arn:aws:iam::600627351764:role/external-dns-irsa-role
