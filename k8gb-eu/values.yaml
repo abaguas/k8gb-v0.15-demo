@@ -24,8 +24,7 @@ k8gb:
       name: k8gb-external-dns
       annotations:
         eks.amazonaws.com/role-arn: arn:aws:iam::600627351764:role/external-dns-irsa-role
-    extdns:
-      txtPrefix: "k8gb-eu"
-      txtOwnerId: "k8gb-Z0558249124TGIA4RDL27-eu"
+    txtPrefix: "k8gb-eu"
+    txtOwnerId: "k8gb-Z0558249124TGIA4RDL27-eu"
     domainFilters:
     - k8gb.website
