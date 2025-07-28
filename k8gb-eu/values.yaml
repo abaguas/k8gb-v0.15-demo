@@ -11,6 +11,9 @@ k8gb:
     - parentZone: "k8gb.website"
       loadBalancedZone: "cloud.k8gb.website"
       dnsZoneNegTTL: 30
+    - parentZone: "k8gb.website"
+      loadBalancedZone: "aws.k8gb.website"
+      dnsZoneNegTTL: 30
     edgeDNSServers:
     - 169.254.169.253
     clusterGeoTag: eu
