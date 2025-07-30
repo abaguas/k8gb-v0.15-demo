@@ -30,4 +30,5 @@ k8gb:
     txtPrefix: k8gb-eu
     txtOwnerId: k8gb-Z0558249124TGIA4RDL27-eu
     domainFilters:
-      - k8gb.websit
+      - k8gb.website
+      - k8gb.website
